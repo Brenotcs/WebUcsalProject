@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Brenotcs/WebFirebase.git"
+    "url": "git+https://github.com/Brenotcs/WebUcsalProject.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Brenotcs/WebFirebase/issues"
+    "url": "https://github.com/Brenotcs/WebUcsalProject/issues"
   },
-  "homepage": "https://github.com/Brenotcs/WebFirebase#readme",
+  "homepage": "https://github.com/Brenotcs/WebUcsalProject#readme",
   "description": "",
   "dependencies": {
     "express": "^4.17.3"
