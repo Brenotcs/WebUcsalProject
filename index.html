@@ -7,6 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+
+    <script>
+        const express = require("express");
+        const app = express();
+
+        app.get("/", (request, response) => {
+            response.send('<span style="color: #f00;">Hello World!</span>');
+        })
+
+        const PORT = process.env.PORT || 5000;
+
+        app.listen(PORT, () => {
+            console.log("Listening on port " + PORT);
+        })
+    </script>
 </head>
 
 <body>
@@ -23,16 +38,17 @@
         <form action="index.html" class="formulario" method="POST">
 
             <label for="nome">Nome</label>
-            <input type="text" name="nome" id="nome"  required placeholder="Nome" class="standart_input">
+            <input type="text" name="nome" id="nome" required placeholder="Nome" class="standart_input">
             <br>
             <label for="email">Email</label>
-            <input type="email" name="email" id="email"  required placeholder="Email" class="standart_input">
+            <input type="email" name="email" id="email" required placeholder="Email" class="standart_input">
             <br>
             <label for="cpf">Cpf</label>
-            <input type="text" maxlength="11" name="cpf" id="cpf"  required placeholder="Cpf" class="standart_input">
+            <input type="text" maxlength="11" name="cpf" id="cpf" required placeholder="Cpf" class="standart_input">
             <br>
             <label for="telefone">Telefone</label>
-            <input type="text" maxlength="11" name="telefone" id="telefone"  required placeholder="Telefone" class="standart_input">
+            <input type="text" maxlength="11" name="telefone" id="telefone" required placeholder="Telefone"
+                class="standart_input">
 
             <br>
             <input type="submit" name="submit" id="submit" value="Enviar" class="send">
