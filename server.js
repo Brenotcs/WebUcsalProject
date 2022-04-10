@@ -1,8 +1,8 @@
 const express = require("express");
 const app = express();
 
-app.get("/", (request, response) => {
-    response.send('<span style="color: #f00;">Hello World!</span>');
+app.get("/", (_request, response) => {
+    include_once("index.html");
 })
 
 const PORT = process.env.PORT || 5000;
