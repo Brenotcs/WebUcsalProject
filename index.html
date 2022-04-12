@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web-Ucsal-Project</title>
     <link rel="stylesheet" href="style.css">
-    
+
 </head>
 
 <body>
@@ -23,23 +23,29 @@
     <main>
         <form action="index.html" class="formulario" method="POST">
 
-            <label for="nome">Nome</label><br><br>
-            <input type="text" name="nome" id="nome"  required placeholder="Nome" class="standart_input">
-            <br>
-            <label for="sobrenome">Sobrenome</label><br><br>
-            <input type="text" name="Sobrenome" id="sobrenome"  required placeholder="Sobrenome" class="standart_input">
-            <br>
-            <label for="email">Email</label><br><br>
-            <input type="email" name="email" id="email"  required placeholder="Email" class="standart_input">
-            <br>
-            <label for="cpf">Cpf</label><br><br>
-            <input type="text" maxlength="11" name="cpf" id="cpf"  required placeholder="Cpf" class="standart_input">
-            <br>
-            <label for="telefone">Telefone</label><br><br>
-            <input type="text" maxlength="11" name="telefone" id="telefone"  required placeholder="Telefone" class="standart_input">
+            <h1>Login</h1><br>
 
+
+            <label for="matricula">Matrícula</label><br><br>
+            <input type="text" maxlength="9" name="matricula" id="matricula" required placeholder="Matricula"
+                class="standart_input">
             <br>
-            <input type="submit" name="submit" id="submit" value="Enviar" class="send">
+            <label for="password">Senha</label><br><br>
+            <input type="password" minlength="8" name="password" id="password" required placeholder="Senha" class="standart_input">
+            <br>
+            <hr>
+
+            <div class="button">
+            <div class="pass">
+                <p>Esqueceu a Senha?</p>
+                <a href="mudarSenha.html" class="buttonIndex">Mudar Senha</a>
+            </div>
+
+            <div class="cadast">
+                <p>Cadastrar</p>
+                <a href="cadastro.html" class="buttonIndex">Cadastrar</a>
+            </div>
+            </div>
 
         </form>
     </main>
