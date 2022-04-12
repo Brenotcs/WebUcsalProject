@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Web-Ucsal-Project</title>
     <link rel="stylesheet" href="style.css">
     
 </head>
@@ -15,7 +15,7 @@
     <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-database.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-analytics.js"></script>
-    <script src="js/firebasejs"></script>
+    <script src="firebase/firebase.js"></script>
 
     <header>
     </header>
@@ -23,16 +23,19 @@
     <main>
         <form action="index.html" class="formulario" method="POST">
 
-            <label for="nome">Nome</label>
+            <label for="nome">Nome</label><br><br>
             <input type="text" name="nome" id="nome"  required placeholder="Nome" class="standart_input">
             <br>
-            <label for="email">Email</label>
+            <label for="sobrenome">Sobrenome</label><br><br>
+            <input type="text" name="Sobrenome" id="sobrenome"  required placeholder="Sobrenome" class="standart_input">
+            <br>
+            <label for="email">Email</label><br><br>
             <input type="email" name="email" id="email"  required placeholder="Email" class="standart_input">
             <br>
-            <label for="cpf">Cpf</label>
+            <label for="cpf">Cpf</label><br><br>
             <input type="text" maxlength="11" name="cpf" id="cpf"  required placeholder="Cpf" class="standart_input">
             <br>
-            <label for="telefone">Telefone</label>
+            <label for="telefone">Telefone</label><br><br>
             <input type="text" maxlength="11" name="telefone" id="telefone"  required placeholder="Telefone" class="standart_input">
 
             <br>
