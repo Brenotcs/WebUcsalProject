@@ -28,17 +28,18 @@ body{
     padding: 25px;
     border-radius: 10px;
     margin-top: 10px;
-    background-color:#a3a3a3 ;
+    background-color: #0084ff;
+    color: #f5f5f5;
 }
-.pass{
+/*.pass{
     
 }
 .cadast{
     
-}
+}*/
 .buttonIndex{
-    background-color: #0084ff;
-    color: black;
+    background-color:#a3a3a3 ;
+    color: rgb(0, 0, 0);
     padding: 10px;
     border-radius: 5px;
     text-decoration: none;
