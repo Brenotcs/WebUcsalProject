@@ -18,7 +18,7 @@
   "homepage": "https://github.com/Brenotcs/WebUcsalProject#readme",
   "dependencies": {
     "express": "^4.17.3",
-    "firebase": "^9.6.10"
+    "firebase": "^9.6.11"
   },
   "keywords": [],
   "description": ""
