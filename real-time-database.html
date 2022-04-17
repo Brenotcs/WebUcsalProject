@@ -19,64 +19,43 @@
     <script src="real-time-database.js"></script>
     <script src="firebase/firebase.js"></script>
 
-    <script type="module">
-        // Import the functions you need from the SDKs you need
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
-        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-analytics.js";
-        // TODO: Add SDKs for Firebase products that you want to use
-        // https://firebase.google.com/docs/web/setup#available-libraries
-      
-        // Your web app's Firebase configuration
-        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-        const firebaseConfig = {
-          apiKey: "AIzaSyBjEB6kZcgzamrNNtnXiix89lhQ5MQ1oVQ",
-          authDomain: "ucsal-web-project.firebaseapp.com",
-          projectId: "ucsal-web-project",
-          storageBucket: "ucsal-web-project.appspot.com",
-          messagingSenderId: "930705067896",
-          appId: "1:930705067896:web:cf6d4346ed93a030eb028d",
-          measurementId: "G-YZXSC6DSZ4"
-        };
-      
-        // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
-        const analytics = getAnalytics(app);
-      </script>
-
     <header>
     </header>
 
     <main>
-        <form action="index.html" class="formulario" method="POST">
 
-            <h1>Login</h1><br>
+        <ul id="usersList"></ul>
+        <hr>
 
+        <div class="col-md-4">
+            <form class="formulario">
 
-            <label for="matricula">Matrícula</label><br><br>
-            <input type="text" maxlength="9" name="matricula" id="matricula" required placeholder="Matricula"
-                class="standart_input">
-            <br>
-            <label for="password">Senha</label><br><br>
-            <input type="password" minlength="8" name="password" id="password" required placeholder="Senha" class="standart_input">
-            <br>
-            <input type="submit" name="submit" id="submit" value="Entrar" class="send"><br><br>
+                <h1>Cadastro</h1><br>
 
+                <label for="nome">Nome</label><br><br>
+                <input type="text" name="nome" id="nomeInput" required placeholder="Nome" class="standart_input">
+                <br>
+                <label for="sobrenome">Sobrenome</label><br><br>
+                <input type="text" name="Sobrenome" id="sobrenomeInput" required placeholder="Sobrenome"
+                    class="standart_input">
+                <br>
+                <label for="email">Email</label><br><br>
+                <input type="email" name="email" id="emailInput" required placeholder="Email" class="standart_input">
+                <br>
+                <label for="matricula">Matrícula</label><br><br>
+                <input type="text" maxlength="9" name="matriculaInput" id="matricula" required placeholder="Matricula"
+                    class="standart_input">
+                <br>
+                <label for="password">Senha</label><br><br>
+                <input type="password" minlength="8" name="passwordInput" id="password" required placeholder="Password"
+                    class="standart_input">
 
-            <hr>
+                <br>
+                <input type="submit" name="submit" id="submitButton" value="Fazer Cadastro" class="send">
 
-            <div class="button">
-            <div class="pass">
-                <p>Esqueceu a Senha?</p>
-                <a href="mudarSenha.html" class="buttonIndex">Mudar Senha</a>
-            </div>
+            </form>
+        </div>
 
-            <div class="cadast">
-                <p>Cadastrar</p>
-                <a href="cadastro.html" class="buttonIndex">Cadastrar</a>
-            </div>
-            </div>
-
-        </form>
     </main>
     <footer>
     </footer>
