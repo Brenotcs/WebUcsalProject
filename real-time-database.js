@@ -5,6 +5,7 @@ var emailInput = document.getElementById('emailInput');
 var matriculaInput = document.getElementById('matriculaInput');
 var passwordInput = document.getElementById('passwordInput');
 var submitButton = document.getElementById('submitButton');
+var authGoogleButton = document.getElementById('authGoogleButton');
 
 submitButton.addEventListener('click', function () {
     create(nomeInput.value, sobrenomeInput.value, emailInput.value, matriculaInput.value, passwordInput.value);
