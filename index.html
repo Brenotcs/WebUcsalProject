@@ -12,50 +12,52 @@
 
 <body>
 
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-database.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-analytics.js"></script>
-    <script src="real-time-database.js"></script>
+    <script src="firebaseConfig.js"></script>
+    <script src="app.js"></script>
 
-    
+
     <header>
     </header>
 
     <main>
-        <form action="index.html" class="formulario" method="POST">
+        <div class="formulario">
+            <form action="index.html" method="POST">
 
-            <h1>Login</h1><br>
+                <h1>Login</h1><br>
 
-
-            <label for="matricula">Matrícula</label><br><br>
-            <input type="text" maxlength="9" name="matricula" id="matricula" required placeholder="Matricula"
-                class="standart_input">
-            <br>
-            <label for="password">Senha</label><br><br>
-            <input type="password" minlength="8" name="password" id="password" required placeholder="Senha" class="standart_input">
-            <br>
-            <input type="submit" name="submit" id="submit" value="Entrar" class="send"><br><br>
+                <label for="email">Email</label><br><br>
+                <input type="email" name="email" id="emailInput" required placeholder="Email" class="standart_input">
+                <br>
+                <label for="password">Senha</label><br><br>
+                <input type="password" minlength="8" name="password" id="passwordInput" required placeholder="Senha"
+                    class="standart_input">
+                <br>
+            </form>
+            <a href="" id="submitButton" class="send">Entrar</a><br><br>
 
             <div class="buttonAuth">
                 <a href="" class="authGoogleButton">Autenticar com Google</a>
             </div>
             <br>
 
-            <hr>
-
             <div class="button">
-            <div class="pass">
-                <p>Esqueceu a Senha?</p>
-                <a href="mudarSenha.html" class="buttonIndex">Mudar Senha</a>
+                <hr>
+                <div class="pass">
+                    <p>Esqueceu a Senha?</p>
+                    <a href="mudarSenha.html" class="buttonIndex">Mudar Senha</a>
+                </div>
+
+                <div class="cadast">
+                    <p>Cadastrar</p>
+                    <a href="real-time-database.html" class="buttonIndex">Cadastrar</a>
+                </div>
             </div>
 
-            <div class="cadast">
-                <p>Cadastrar</p>
-                <a href="real-time-database.html" class="buttonIndex">Cadastrar</a>
-            </div>
-            </div>
-
-        </form>
+        </div>
     </main>
     <footer>
     </footer>
