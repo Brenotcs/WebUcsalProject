@@ -7,18 +7,20 @@ var passwordInput = document.getElementById('passwordInput');
 var submitButton = document.getElementById('submitButton');
 var authGoogleButton = document.getElementById('authGoogleButton');
 
-submitButton.addEventListener('click', function () {
+window.onload=function(){
+    submitButton.addEventListener('click', function () {
 
-    firebase.auth().signInWithEmailAndPassword(emailInput.value, passwordInput.value).then(function (result){
-        alert("Usuário Conectado!");
-
-        console.log("Success!");
-
-    }).catch(function (error) {
-        
-        var errorCode = error.code;
-        var errorMessage= error.message;
-
-        alert(errorMessage);
+        firebase.auth().signInWithEmailAndPassword(emailInput.value, passwordInput.value).then(function (result){
+            alert("Usuário Conectado!");
+    
+            console.log("Success!");
+    
+        }).catch(function (error) {
+            
+            var errorCode = error.code;
+            var errorMessage= error.message;
+    
+            alert(errorMessage);
+        });
     });
-});
+  }

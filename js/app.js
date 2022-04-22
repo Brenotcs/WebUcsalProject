@@ -6,7 +6,7 @@ import 'firebase/firebase-firestore';
 import { getAuth } from "firebase/auth";
 import firebaseConfig from './firebaseConfig';
 
-    const firebaseConfig = {
+    const config = {
       apiKey: "AIzaSyBjEB6kZcgzamrNNtnXiix89lhQ5MQ1oVQ",
       authDomain: "ucsal-web-project.firebaseapp.com",
       databaseURL: "https://ucsal-web-project-default-rtdb.firebaseio.com",
@@ -17,11 +17,5 @@ import firebaseConfig from './firebaseConfig';
       measurementId: "G-YZXSC6DSZ4"
     };
     
-    const app = initializeApp(firebaseConfig);
+    const app = initializeApp(config);
     const analytics = getAnalytics(app);
-
-const firebase = firebase.initializeApp(firebaseConfig);
-const db = firebaseApp.firestore();
-
-const auth = getAuth();
-auth.languageCode = 'it';
